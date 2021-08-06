@@ -1,0 +1,88 @@
+.app {
+  padding: 10%;
+  max-width: 1000px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  box-sizing: content-box;
+
+  &__dark-mode-btn {
+    border: 0;
+    background: transparent;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  .dark-mode {
+    background: #121212;
+  
+    p {
+      color: white;
+      opacity: 87%;
+    }
+  
+    .title {
+      color: #BB86FC;
+    }
+  
+    .subtitle {
+      color: #03DAC6;
+    }
+  
+    .is-primary {
+      background-color: #BB86FC;
+      color: black;
+    }
+  
+    .is-primary:hover,
+    .is-primary:focus {
+      background-color: #BB86FC;
+      opacity: 75%;
+      color: black;
+    }
+  
+    .is-link {
+      background-color: #03DAC6;
+      color: black;
+    }
+  
+    .is-link:hover,
+    .is-link:focus {
+      background-color: #03DAC6;
+      opacity: 75%;
+      color: black;
+    }
+  
+    input {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+  
+      &::placeholder {
+        color: white;
+      }
+  
+      &:hover {
+        border-color: rgba(255, 255, 255, 0.4);
+      }
+  
+      &:focus {
+        border-color: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+  
+  .buttons > .button {
+    height: 30px;
+    width: 100px;
+  }
+}
